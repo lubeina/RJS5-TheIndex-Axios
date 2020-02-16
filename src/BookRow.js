@@ -4,8 +4,6 @@ const BookRow = props => {
   const book = props.book;
   const authorName = props.authorName;
 
-  console.log("BOOK", book);
-
   const authors = book.authors.map(author => (
     <div key={author.id}>{author.name} </div>
   ));
